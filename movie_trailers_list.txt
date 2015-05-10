@@ -1,0 +1,51 @@
+[
+ {
+  "title": "Jurassic World",
+  "trailer_url": "https://www.youtube.com/watch?v=RFinNxS5KN4", 
+  "image_url": "http://i.imgur.com/bFp0bh6.png", 
+  "website_url": "http://www.jurassicworld.com/", 
+  "description": "Twenty-two years after the events of Jurassic Park (1993), Isla Nublar now features a fully functioning dinosaur theme park, Jurassic World, as originally envisioned by John Hammond. After 10 years of operation and visitor rates declining, in order to fulfill a corporate mandate, a new attraction is created to re-spark visitor's interest, which backfires horribly."
+ }, 
+ {
+  "title": "The Fifth Element",
+  "trailer_url": "https://www.youtube.com/watch?v=VkX7dHjL-aY", 
+  "image_url": "http://www.sonypictures.com/movies/thefifthelement/assets/images/onesheet.jpg", 
+  "website_url": "http://www.sonypictures.com/movies/thefifthelement/", 
+  "description": "In the colorful future, a cab driver unwittingly becomes the central figure in the search for a legendary cosmic weapon to keep Evil and Mr Zorg at bay."
+ }, 
+ {
+  "title": "Lawrence of Arabia",
+  "trailer_url": "https://www.youtube.com/watch?v=zmr1iSG3RTA", 
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/c/c5/Lawrence_of_arabia_ver3_xxlg.jpg", 
+  "website_url": "", 
+  "description": "A flamboyant and controversial British military figure and his conflicted loyalties during his World War I service in the Middle East."
+ }, 
+ {
+  "title": "Big Game",
+  "trailer_url": "https://www.youtube.com/watch?v=vR-0mwLXiow", 
+  "image_url": "https://dansmithsbooks.files.wordpress.com/2015/02/big-game-movie-tie-in-front-cover.jpg", 
+  "website_url": "", 
+  "description": "A young teenager camping in the woods helps rescue the President of the United States when Air Force One is shot down near his campsite."
+ }, 
+ {
+  "title": "Aliens",
+  "trailer_url": "https://www.youtube.com/watch?v=zNE0dlHcmgA", 
+  "image_url": "http://flixified.com/wp-content/uploads/2014/01/AliensPoster.jpg", 
+  "website_url": "", 
+  "description": "The planet from Alien (1979) has been colonized, but contact is lost. This time, the rescue team has impressive firepower, but will it be enough?"
+ }, 
+ {
+  "title": "Castle in the Sky",
+  "trailer_url": "https://www.youtube.com/watch?v=8ykEy-yPBFc", 
+  "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq9_5ifsDzL--Ba7Zw_Afm5J0ypLFeaj36NPJgcmpyQNlEgX4K", 
+  "website_url": "", 
+  "description": "A young boy and a girl with a magic crystal must race against pirates and foreign agents in a search for a legendary floating castle."
+ }, 
+ {
+  "title": "Fantastic Four",
+  "trailer_url": "https://www.youtube.com/watch?v=_rRoD28-WgU", 
+  "image_url": "http://fc08.deviantart.net/fs70/i/2013/188/e/b/fantastic_four___teaser_poster_by_mrsteiners-d6cf9xh.png", 
+  "website_url": "", 
+  "description": "Four young outsiders teleport to an alternate and dangerous universe which alters their physical form in shocking ways. The four must learn to harness their new abilities and work together to save Earth from a former friend turned enemy."
+ }
+]
