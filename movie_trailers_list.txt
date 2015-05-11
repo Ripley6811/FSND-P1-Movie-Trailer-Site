@@ -45,7 +45,7 @@
   "title": "Fantastic Four",
   "trailer_url": "https://www.youtube.com/watch?v=_rRoD28-WgU", 
   "image_url": "http://fc08.deviantart.net/fs70/i/2013/188/e/b/fantastic_four___teaser_poster_by_mrsteiners-d6cf9xh.png", 
-  "website_url": "", 
+  "website_url": "http://www.fantasticfourmovie.com/", 
   "description": "Four young outsiders teleport to an alternate and dangerous universe which alters their physical form in shocking ways. The four must learn to harness their new abilities and work together to save Earth from a former friend turned enemy."
  }
 ]

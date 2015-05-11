@@ -23,6 +23,10 @@
         });
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.movie-tile', function (event) {
+            if (event.target.hasClass('no-modal')) {
+                $('#trailer').modal('hide');
+                return;
+            }
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
             var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
             $("#trailer-video-container").empty().append($("<iframe></iframe>", {
@@ -71,65 +75,72 @@
       
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="RFinNxS5KN4" data-toggle="modal" data-target="#trailer">
     <img class="poster" src="http://i.imgur.com/bFp0bh6.png" width="220" height="342">
-    <div class="posterfade"></div>
-    <div class="title">
+    <div class="title-info">
         <h2>Jurassic World</h2>
+        <div class="info-box">Twenty-two years after the events of Jurassic Park (1993), Isla Nublar now features a fully functioning dinosaur theme park, Jurassic World, as originally envisioned by John Hammond. After 10 years of operation and visitor rates declining, in order to fulfill a corporate mandate, a new attraction is created to re-spark visitor's interest, which backfires horribly.</div>
+        <br>
+        <div class="website  no-modal"><a class="btn btn-primary" data-dismiss="modal" data-target=".modal" role="button" href="http://www.jurassicworld.com/" target="_blank">Official Website</a></div>
     </div>
-    <div class="info-icon"><span class="glyphicon glyphicon-info-sign"></span></div>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="VkX7dHjL-aY" data-toggle="modal" data-target="#trailer">
     <img class="poster" src="http://www.sonypictures.com/movies/thefifthelement/assets/images/onesheet.jpg" width="220" height="342">
-    <div class="posterfade"></div>
-    <div class="title">
+    <div class="title-info">
         <h2>The Fifth Element</h2>
+        <div class="info-box">In the colorful future, a cab driver unwittingly becomes the central figure in the search for a legendary cosmic weapon to keep Evil and Mr Zorg at bay.</div>
+        <br>
+        <div class="website  no-modal"><a class="btn btn-primary" data-dismiss="modal" data-target=".modal" role="button" href="http://www.sonypictures.com/movies/thefifthelement/" target="_blank">Official Website</a></div>
     </div>
-    <div class="info-icon"><span class="glyphicon glyphicon-info-sign"></span></div>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="zmr1iSG3RTA" data-toggle="modal" data-target="#trailer">
     <img class="poster" src="http://upload.wikimedia.org/wikipedia/commons/c/c5/Lawrence_of_arabia_ver3_xxlg.jpg" width="220" height="342">
-    <div class="posterfade"></div>
-    <div class="title">
+    <div class="title-info">
         <h2>Lawrence of Arabia</h2>
+        <div class="info-box">A flamboyant and controversial British military figure and his conflicted loyalties during his World War I service in the Middle East.</div>
+        <br>
+        <div class="website hidden no-modal"><a class="btn btn-primary" data-dismiss="modal" data-target=".modal" role="button" href="" target="_blank">Official Website</a></div>
     </div>
-    <div class="info-icon"><span class="glyphicon glyphicon-info-sign"></span></div>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="vR-0mwLXiow" data-toggle="modal" data-target="#trailer">
     <img class="poster" src="https://dansmithsbooks.files.wordpress.com/2015/02/big-game-movie-tie-in-front-cover.jpg" width="220" height="342">
-    <div class="posterfade"></div>
-    <div class="title">
+    <div class="title-info">
         <h2>Big Game</h2>
+        <div class="info-box">A young teenager camping in the woods helps rescue the President of the United States when Air Force One is shot down near his campsite.</div>
+        <br>
+        <div class="website hidden no-modal"><a class="btn btn-primary" data-dismiss="modal" data-target=".modal" role="button" href="" target="_blank">Official Website</a></div>
     </div>
-    <div class="info-icon"><span class="glyphicon glyphicon-info-sign"></span></div>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="zNE0dlHcmgA" data-toggle="modal" data-target="#trailer">
     <img class="poster" src="http://flixified.com/wp-content/uploads/2014/01/AliensPoster.jpg" width="220" height="342">
-    <div class="posterfade"></div>
-    <div class="title">
+    <div class="title-info">
         <h2>Aliens</h2>
+        <div class="info-box">The planet from Alien (1979) has been colonized, but contact is lost. This time, the rescue team has impressive firepower, but will it be enough?</div>
+        <br>
+        <div class="website hidden no-modal"><a class="btn btn-primary" data-dismiss="modal" data-target=".modal" role="button" href="" target="_blank">Official Website</a></div>
     </div>
-    <div class="info-icon"><span class="glyphicon glyphicon-info-sign"></span></div>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="8ykEy-yPBFc" data-toggle="modal" data-target="#trailer">
     <img class="poster" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq9_5ifsDzL--Ba7Zw_Afm5J0ypLFeaj36NPJgcmpyQNlEgX4K" width="220" height="342">
-    <div class="posterfade"></div>
-    <div class="title">
+    <div class="title-info">
         <h2>Castle in the Sky</h2>
+        <div class="info-box">A young boy and a girl with a magic crystal must race against pirates and foreign agents in a search for a legendary floating castle.</div>
+        <br>
+        <div class="website hidden no-modal"><a class="btn btn-primary" data-dismiss="modal" data-target=".modal" role="button" href="" target="_blank">Official Website</a></div>
     </div>
-    <div class="info-icon"><span class="glyphicon glyphicon-info-sign"></span></div>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="_rRoD28-WgU" data-toggle="modal" data-target="#trailer">
     <img class="poster" src="http://fc08.deviantart.net/fs70/i/2013/188/e/b/fantastic_four___teaser_poster_by_mrsteiners-d6cf9xh.png" width="220" height="342">
-    <div class="posterfade"></div>
-    <div class="title">
+    <div class="title-info">
         <h2>Fantastic Four</h2>
+        <div class="info-box">Four young outsiders teleport to an alternate and dangerous universe which alters their physical form in shocking ways. The four must learn to harness their new abilities and work together to save Earth from a former friend turned enemy.</div>
+        <br>
+        <div class="website  no-modal"><a class="btn btn-primary" data-dismiss="modal" data-target=".modal" role="button" href="http://www.fantasticfourmovie.com/" target="_blank">Official Website</a></div>
     </div>
-    <div class="info-icon"><span class="glyphicon glyphicon-info-sign"></span></div>
 </div>
 
     </div>

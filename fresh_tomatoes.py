@@ -28,6 +28,10 @@ main_page_head = '''
         });
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.movie-tile', function (event) {
+            if (event.target.hasClass('no-modal')) {
+                $('#trailer').modal('hide');
+                return;
+            }
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
             var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
             $("#trailer-video-container").empty().append($("<iframe></iframe>", {
@@ -86,11 +90,12 @@ main_page_content = '''
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img class="poster" src="{poster_image_url}" width="220" height="342">
-    <div class="posterfade"></div>
-    <div class="title">
+    <div class="title-info">
         <h2>{movie_title}</h2>
+        <div class="info-box">{movie_description}</div>
+        <br>
+        <div class="website {hide_website_link} no-modal"><a class="btn btn-primary" role="button" href="{movie_website}" target="_blank">Official Website</a></div>
     </div>
-    <div class="info-icon"><span class="glyphicon glyphicon-info-sign"></span></div>
 </div>
 '''
 
@@ -107,7 +112,10 @@ def create_movie_tiles_content(movies):
         content += movie_tile_content.format(
             movie_title=movie.title,
             poster_image_url=movie.image_url,
-            trailer_youtube_id=trailer_youtube_id
+            trailer_youtube_id=trailer_youtube_id,
+            movie_description=movie.description,
+            movie_website=movie.website_url,
+            hide_website_link=('' if movie.website_url else 'hidden')
         )
     return content
 
