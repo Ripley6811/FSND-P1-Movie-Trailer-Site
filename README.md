@@ -44,6 +44,12 @@ key | value
 ####`script.js`
 - JavaScript for running this single page website.
 
+####`favicon.ico`
+- Small image for browser tab.
+
+####`fresh_tomatoes.html`
+- Compiled single page website. Created with `fresh_tomatoes.py`.
+
 
 ##Resources
 [Adding a favicon](http://stackoverflow.com/questions/4888377/how-to-add-a-browser-tab-icon-for-a-website)
