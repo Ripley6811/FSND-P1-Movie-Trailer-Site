@@ -11,38 +11,9 @@
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="styles.css">
-
-    <script type="text/javascript" charset="utf-8">
-        // Pause the video when the modal is closed
-        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
-            // Remove the src so the player itself gets removed, as this is the only
-            // reliable way to ensure the video stops playing in IE
-            $("#trailer-video-container").empty();
-        });
-        // Start playing the video whenever the trailer modal is opened
-        $(document).on('click', '.movie-tile', function (event) {
-            if (event.target.hasClass('no-modal')) {
-                $('#trailer').modal('hide');
-                return;
-            }
-            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
-            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
-              'id': 'trailer-video',
-              'type': 'text-html',
-              'src': sourceUrl,
-              'frameborder': 0
-            }));
-        });
-        // Animate in the movies when the page loads
-        $(document).ready(function () {
-          $('.movie-tile').hide().first().show("fast", function showNext() {
-            $(this).next("div").show("fast", showNext);
-          });
-        });
-    </script>
+    <script src="script.js"></script>
 </head>
 
 <!DOCTYPE html>
@@ -79,7 +50,7 @@
         <h2>Jurassic World</h2>
         <div class="info-box">Twenty-two years after the events of Jurassic Park (1993), Isla Nublar now features a fully functioning dinosaur theme park, Jurassic World, as originally envisioned by John Hammond. After 10 years of operation and visitor rates declining, in order to fulfill a corporate mandate, a new attraction is created to re-spark visitor's interest, which backfires horribly.</div>
         <br>
-        <div class="website  no-modal"><a class="btn btn-primary" data-dismiss="modal" data-target=".modal" role="button" href="http://www.jurassicworld.com/" target="_blank">Official Website</a></div>
+        <div class="website-btn "><a class="btn btn-primary no-modal" role="button" href="http://www.jurassicworld.com/" target="_blank">Official Website</a></div>
     </div>
 </div>
 
@@ -89,7 +60,7 @@
         <h2>The Fifth Element</h2>
         <div class="info-box">In the colorful future, a cab driver unwittingly becomes the central figure in the search for a legendary cosmic weapon to keep Evil and Mr Zorg at bay.</div>
         <br>
-        <div class="website  no-modal"><a class="btn btn-primary" data-dismiss="modal" data-target=".modal" role="button" href="http://www.sonypictures.com/movies/thefifthelement/" target="_blank">Official Website</a></div>
+        <div class="website-btn "><a class="btn btn-primary no-modal" role="button" href="http://www.sonypictures.com/movies/thefifthelement/" target="_blank">Official Website</a></div>
     </div>
 </div>
 
@@ -99,7 +70,7 @@
         <h2>Lawrence of Arabia</h2>
         <div class="info-box">A flamboyant and controversial British military figure and his conflicted loyalties during his World War I service in the Middle East.</div>
         <br>
-        <div class="website hidden no-modal"><a class="btn btn-primary" data-dismiss="modal" data-target=".modal" role="button" href="" target="_blank">Official Website</a></div>
+        <div class="website-btn hidden"><a class="btn btn-primary no-modal" role="button" href="" target="_blank">Official Website</a></div>
     </div>
 </div>
 
@@ -109,7 +80,7 @@
         <h2>Big Game</h2>
         <div class="info-box">A young teenager camping in the woods helps rescue the President of the United States when Air Force One is shot down near his campsite.</div>
         <br>
-        <div class="website hidden no-modal"><a class="btn btn-primary" data-dismiss="modal" data-target=".modal" role="button" href="" target="_blank">Official Website</a></div>
+        <div class="website-btn hidden"><a class="btn btn-primary no-modal" role="button" href="" target="_blank">Official Website</a></div>
     </div>
 </div>
 
@@ -119,7 +90,7 @@
         <h2>Aliens</h2>
         <div class="info-box">The planet from Alien (1979) has been colonized, but contact is lost. This time, the rescue team has impressive firepower, but will it be enough?</div>
         <br>
-        <div class="website hidden no-modal"><a class="btn btn-primary" data-dismiss="modal" data-target=".modal" role="button" href="" target="_blank">Official Website</a></div>
+        <div class="website-btn hidden"><a class="btn btn-primary no-modal" role="button" href="" target="_blank">Official Website</a></div>
     </div>
 </div>
 
@@ -129,7 +100,7 @@
         <h2>Castle in the Sky</h2>
         <div class="info-box">A young boy and a girl with a magic crystal must race against pirates and foreign agents in a search for a legendary floating castle.</div>
         <br>
-        <div class="website hidden no-modal"><a class="btn btn-primary" data-dismiss="modal" data-target=".modal" role="button" href="" target="_blank">Official Website</a></div>
+        <div class="website-btn hidden"><a class="btn btn-primary no-modal" role="button" href="" target="_blank">Official Website</a></div>
     </div>
 </div>
 
@@ -139,7 +110,7 @@
         <h2>Fantastic Four</h2>
         <div class="info-box">Four young outsiders teleport to an alternate and dangerous universe which alters their physical form in shocking ways. The four must learn to harness their new abilities and work together to save Earth from a former friend turned enemy.</div>
         <br>
-        <div class="website  no-modal"><a class="btn btn-primary" data-dismiss="modal" data-target=".modal" role="button" href="http://www.fantasticfourmovie.com/" target="_blank">Official Website</a></div>
+        <div class="website-btn "><a class="btn btn-primary no-modal" role="button" href="http://www.fantasticfourmovie.com/" target="_blank">Official Website</a></div>
     </div>
 </div>
 

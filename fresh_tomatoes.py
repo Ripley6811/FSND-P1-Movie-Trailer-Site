@@ -16,38 +16,9 @@ main_page_head = '''
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="styles.css">
-
-    <script type="text/javascript" charset="utf-8">
-        // Pause the video when the modal is closed
-        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
-            // Remove the src so the player itself gets removed, as this is the only
-            // reliable way to ensure the video stops playing in IE
-            $("#trailer-video-container").empty();
-        });
-        // Start playing the video whenever the trailer modal is opened
-        $(document).on('click', '.movie-tile', function (event) {
-            if (event.target.hasClass('no-modal')) {
-                $('#trailer').modal('hide');
-                return;
-            }
-            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
-            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
-              'id': 'trailer-video',
-              'type': 'text-html',
-              'src': sourceUrl,
-              'frameborder': 0
-            }));
-        });
-        // Animate in the movies when the page loads
-        $(document).ready(function () {
-          $('.movie-tile').hide().first().show("fast", function showNext() {
-            $(this).next("div").show("fast", showNext);
-          });
-        });
-    </script>
+    <script src="script.js"></script>
 </head>
 '''
 
@@ -94,7 +65,7 @@ movie_tile_content = '''
         <h2>{movie_title}</h2>
         <div class="info-box">{movie_description}</div>
         <br>
-        <div class="website {hide_website_link} no-modal"><a class="btn btn-primary" role="button" href="{movie_website}" target="_blank">Official Website</a></div>
+        <div class="website-btn {hide_website_link}"><a class="btn btn-primary no-modal" role="button" href="{movie_website}" target="_blank">Official Website</a></div>
     </div>
 </div>
 '''
