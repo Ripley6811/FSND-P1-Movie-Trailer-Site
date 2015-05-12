@@ -9,6 +9,10 @@ Click the "Official Website" button to open the link in a new browser tab.
 
 [Live view link (gh-pages)](http://ripley6811.github.io/FSND-P1-Movie-Trailer-Site/)
 
+The single page website is created by running the `compile_website.py` module.
+A file named `index.html` will be the output. Changes to movie trailer data are 
+made in the `movie_trailers_list.txt` file.
+
 
 ##Changes and additions
 
