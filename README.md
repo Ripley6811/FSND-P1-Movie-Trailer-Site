@@ -2,10 +2,10 @@
 
 ##Instructions
 
-This website displays a few trailers of movies I've seen or want to see. Hovering over
+This website displays a few trailers for movies I've seen or want to see. Hovering over
 a movie poster will display a popup description and a link to the "official" website
 if available. Click anywhere on the movie tile, poster or description to watch a trailer.
-Click the "Official Website" link to open the website in a new browser tab.
+Click the "Official Website" button to open the link in a new browser tab.
 
 
 ##Changes and additions
