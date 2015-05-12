@@ -47,5 +47,19 @@
   "image_url": "http://fc08.deviantart.net/fs70/i/2013/188/e/b/fantastic_four___teaser_poster_by_mrsteiners-d6cf9xh.png", 
   "website_url": "http://www.fantasticfourmovie.com/", 
   "description": "Four young outsiders teleport to an alternate and dangerous universe which alters their physical form in shocking ways. The four must learn to harness their new abilities and work together to save Earth from a former friend turned enemy."
+ }, 
+ {
+  "title": "Kiki's Delivery Service",
+  "trailer_url": "https://www.youtube.com/watch?v=4bG17OYs-GA", 
+  "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYSpaPCKDG8eQgDcS7yRj1ofcSbI7n0CRsTG3QBY6VEOEFkB-I", 
+  "website_url": "", 
+  "description": "A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service."
+ }, 
+ {
+  "title": "I.Q.",
+  "trailer_url": "https://www.youtube.com/watch?v=1lF2BkLl0yQ", 
+  "image_url": "http://www.iceposter.com/thumbs/MOV_4b7b0e81_b.jpg", 
+  "website_url": "", 
+  "description": "Albert Einstein helps a young man who's in love with Einstein's niece to catch her attention by pretending temporarily to be a great physicist."
  }
 ]

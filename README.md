@@ -1,11 +1,25 @@
-# FSND-P1-Movie-Trailer-Site
-Project 1: Movie Trailer Website
+# Project 1: Movie Trailer Website
+
+##Instructions
+
+This website displays a few trailers of movies I've seen or want to see. Hovering over
+a movie poster will display a popup description and a link to the "official" website
+if available. Click anywhere on the movie tile, poster or description to watch a trailer.
+Click the "Official Website" link to open the website in a new browser tab.
 
 
-#File descriptions
+##Changes and additions
+
+- Javascript moved from header template to `script.js`.
+- CSS moved from header template to `styles.css`.
+- Added description `div` with an optional button for opening another website.
+- Added Google Fonts' `"Open Sans Condensed"` for all text.
+
+
+##File descriptions
 
 ####`movie_trailers_list.txt`
-Contains a list of movie trailer data in JSON format with the following keys:
+- Contains a list of movie trailer data in JSON format with the following keys:
 
 key | value
 ---|---
@@ -16,16 +30,22 @@ key | value
 `description` | An introductory description of the movie.
 
 ####`compile_website.py`
-Creates the static website by parsing the JSON file of trailer information and runs the fresh_tomatoes function.
+- Creates the static website by parsing the JSON file of trailer information and runs the fresh_tomatoes function.
 
 ####`media.py`
-Contains the `MovieTrailer` class for movie trailer info.
+- Contains the `MovieTrailer` class for movie trailer info.
 
 ####`fresh_tomatoes.py`
-Code for creating a static website for displaying movie trailer images and videos.
+- Code for creating a static website for displaying movie trailer images and videos.
+
+####`styles.css`
+- CSS styling for this single page website.
+
+####`script.js`
+- JavaScript for running this single page website.
 
 
-#Resources
+##Resources
 [Adding a favicon](http://stackoverflow.com/questions/4888377/how-to-add-a-browser-tab-icon-for-a-website)
 - Learn how to add a favicon.
 
@@ -37,3 +57,8 @@ Code for creating a static website for displaying movie trailer images and video
 
 [CSS Gradient Generator](http://www.colorzilla.com/gradient-editor/)
 - Create color and opacity gradients for a div.
+
+[IMDB](http://www.imdb.com/)
+- All synopses were copied from IMDB.
+
+CSS `transition` code copied from an old project of mine.
