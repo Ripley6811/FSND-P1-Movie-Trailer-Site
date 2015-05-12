@@ -7,6 +7,8 @@ a movie poster will display a popup description and a link to the "official" web
 if available. Click anywhere on the movie tile, poster or description to watch a trailer.
 Click the "Official Website" button to open the link in a new browser tab.
 
+[Live view link (gh-pages)](http://ripley6811.github.io/FSND-P1-Movie-Trailer-Site/)
+
 
 ##Changes and additions
 
