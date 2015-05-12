@@ -47,7 +47,7 @@ key | value
 ####`favicon.ico`
 - Small image for browser tab.
 
-####`fresh_tomatoes.html`
+####`index.html`
 - Compiled single page website. Created with `fresh_tomatoes.py`.
 
 
